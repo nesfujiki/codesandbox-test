@@ -45,14 +45,66 @@
  * テンプレート文字列
  */
 
-const name = "yasu";
-const age = 24;
-//「私の名前はやすです。年齢は24です。」
+// const name = "yasu";
+// const age = 24;
+// //「私の名前はやすです。年齢は24です。」
 
-//従来の方法
-const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
-console.log(message1);
+// //従来の方法
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
 
-//テンプレート文字列を用いた方法
-const message2 = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message2);
+// //テンプレート文字列を用いた方法
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+/**
+ * アロー関数
+ */
+
+//従来の関数
+//  function func1(str) {
+//    return str;
+//  }
+// console.log(func1("func1です"));
+// const func1 = function(str) {
+//   return str;
+// }
+// console.log(func1("func1です"));
+
+//アロー変数
+//引数1つなら()を省略できる
+//return省略可
+// const func2 = (str) => {
+//   return str;
+// }
+// const func2 = (str) => str;
+// console.log(func2("func2です"));
+
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// const func3 = (num1, num2) => num1 + num2;
+// console.log(func3(2, 3));
+
+/**
+ * 分割代入
+ */
+
+// const myProfile = {
+//   name: "yasu",
+//   age: 24,
+// };
+// const message1 = `私の名前は${myProfile.name}です。年齢は${myProfile.age}です。`;
+// console.log(message1);
+
+// const { name, age } = myProfile;
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+// const myProfile = ['yasu', 24];
+// const message3 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
+// console.log(message3);
+
+// const [name, age] = myProfile;
+// const message4 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message4);
